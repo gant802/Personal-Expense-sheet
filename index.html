@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Spreadsheet</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Monthly Expense Tracker</h1>
+        </div>
+        <div class="top-boxes">
+            <div class="income">
+                <h2 class="green-text">This month's income</h2>
+                <p class="net-pnl green-text">Personal: <strong><span id="personal-income">$0</span></strong></p>
+                <p class="net-appt green-text">Appartment: <strong><span id="appt-income">$0</span></strong></p>
+                <p class="net-income green-text">Total money made: <strong><span id="total-income">$0</span></strong></p>
+            </div>
+            <div class="cost">
+                <h2 class="red-text">This month's cost</h2>
+                <p class="red-text">Personal: <strong><span id="personal-cost">$0</span></strong></p>
+                <p class="red-text">Appartment: <strong><span id="appt-cost">$0</span></strong></p>
+                <p class="red-text">Total money spent: <strong><span id="total-cost">$0</span></strong></p>
+                <p class="red-text">Net Money: <strong><span id="net-money">$0</span></strong></p>
+            </div>
+            <div class="calculator">
+                <h2>Addition Calculator</h2> <!-- Need help here with how to put in an addition box -->
+                <fieldset>
+                    <label for="dropdown">What would you like to add up?
+                        <select id="dropdown">
+                            <option id="value0" selected value="0">Electricity</option>
+                            <option id="value1" value="1">Gas</option>
+                            <option id="value2" value="2">Eating out</option>
+                            <option id="value3" value="3">Bar</option>
+                            <option id="value4" value="4">Random</option>
+                            <option id="value5" value="5">Car/Gas station</option>
+                            <option id="value6" value="6">Groceries</option>
+                            <option id="value7" value="7">Fun</option>
+                            <option id="value8" value="8">Venmo</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <input type="number" id="num" placeholder="Enter Number Here" />
+                <button class="buttons" id="add">Add</button>
+                <button class="buttons" id="subtract">Subtract</button>
+                <button class="buttons" id="submit">Submit</button>
+            </div>
+        </div>
+
+        <div class="bottom-boxes">
+            <div class="personal-list">
+                <h2 class="personal-apt-header">Personal</h2>
+                <div class="fixed-expense-box">
+                    <h3 class="red-text">Fixed Expenses</h3>
+                    <p class="expense-list red-text">Gym: <strong><span id="gym">$12.69</span></strong></p>
+                    <p class="expense-list red-text">Car Loan: <strong><span id="car_loan">$452</span></strong></p>
+                    <p class="expense-list red-text">Roth: <strong><span id="roth">$200</span></strong></p>
+                    <p class="expense-list red-text">Disney+: <strong><span id="disney">$7.10</span></strong></p>
+                </div>
+                <div class="fluctuates-expense-box">
+                    <h3 class="red-text">Fluctuates Monthly</h3>
+                    <p class="expense-list red-text">Eating out: <strong><span id="eating_out">$0</span></strong></p>
+                    <p class="expense-list red-text">Bar: <strong><span id="bar">$0</span></strong></p>
+                    <p class="expense-list red-text">Random: <strong><span id="random">$0</span></strong></p>
+                    <p class="expense-list red-text">Car/Gas station: <strong><span id="car_gas_station">$0</span></strong></p>
+                    <p class="expense-list red-text">Groceries: <strong><span id="groceries">$0</span></strong></p>
+                    <p class="expense-list red-text">Fun: <strong><span id="fun">$0</span></strong></p>
+                    <p class="expense-list red-text">Venmo: <strong><span id="venmo">$0</span></strong></p>
+                </div>
+                <div class="personal-apt-income">
+                    <h3 class="green-text">Personal Income</h3>
+                    <p class="green-text">TimberLane: <strong><span id="timberlane">$3,000</span></strong></p>
+                </div>
+            </div>
+            <div class="appartment-list">
+                <h2 class="personal-apt-header">Appartment</h2>
+                <div class="fixed-expense-box">
+                    <h3 class="red-text">Fixed Expenses</h3>
+                    <p class="expense-list red-text">Mortgage: <strong><span id="mortgage">$859.85</span></strong></p>
+                    <p class="expense-list red-text">Taxes: <strong><span id="taxes">$0</span></strong></p>
+                    <p class="expense-list red-text">Trash: <strong><span id="trash">$62.97</span></strong></p>
+                    <p class="expense-list red-text">Insurance: <strong><span id="trash">$100</span></strong></p>
+                    <p class="expense-list red-text">Wifi: <strong><span id="wifi">$75</span></strong></p>
+                    <p class="expense-list red-text">Compost: <strong><span id="compost">$14</span></strong></p>
+                </div>
+                <div class="fluctuates-expense-box">
+                    <h3 class="red-text">Fluctuates Monthly</h3>
+                    <p class="expense-list red-text">Electricity: <strong><span id="electricity">$0</span></strong></p>
+                    <p class="expense-list red-text">Gas: <strong><span id="gas">$0</span></strong></p>
+                    <p class="expense-list red-text">Water: <strong><span id="water">$58</span></strong></p>
+                </div>
+                <div class="personal-apt-income">
+                    <h3 class="green-text">Appartment Income</h3>
+                    <p class="green-text">Tenent money: <strong><span id="tenent-money">$2,300</span></strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="./script.js"></script>
+
+</html>

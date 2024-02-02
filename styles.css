@@ -1,0 +1,141 @@
+body {
+    margin: 40px auto;
+    width: 650px;
+    height: auto;
+    background-color: #cacadd;
+    border: 4px solid;
+    border-style: double;
+    padding: 0 20px 20px 20px;
+    border-radius: 20px;
+}
+
+@font-face {
+    font-family: navfont;
+    src: url(navfont.ttf);
+}
+
+@font-face {
+    font-family: h2font;
+    src: url(AldotheApache.ttf);
+}
+
+.top-boxes {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    
+}
+
+.bottom-boxes {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    border-bottom: 2px solid;
+    font-family: navfont;
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: h2font;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+h3 {
+    border-bottom: 2px solid;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.green-text {
+    color: #00a400;
+   }
+   .red-text {
+       color: #c72800;
+   }
+
+.calculator {
+    width: 14rem;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    padding: 0 1px;
+}
+
+.cost {
+ background: black;
+ border-radius: 10px;
+ padding: 0 10px;
+ color: white;
+}
+
+.income {
+    background: black;
+    color: white;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+#num {
+    width: 6.4rem;
+}
+
+#submit {
+    height: 30px;
+    width: 70px;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+.buttons{
+    border-radius: 1em;
+    border: none;
+    padding: 6px;
+    background-color: rgb(176, 172, 172);
+}
+
+.buttons:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+fieldset {
+    border: none;
+    margin: -6px;
+    padding-bottom: 20px;
+}
+
+.personal-apt-header {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.fixed-expense-box {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 80px;
+}
+
+.fluctuates-expense-box {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 60px;
+}
+
+.personal-apt-income {
+    background-color: black;
+    padding: 10px;
+    border-radius: 60px;
+}
